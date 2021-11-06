@@ -23,3 +23,5 @@
     * pyserial
 * 运行`main.py`前
     * 修改端口：`ser = init("COM6")`
+    * 修改指令：`move_abs(ser,DEGREE_TO_MOVE_TO)`
+    * 确保YZ_ACSD608程序未在运行（或端口未连接）
