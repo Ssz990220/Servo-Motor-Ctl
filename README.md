@@ -2,16 +2,16 @@
 ## 硬件信息：
 * 电机型号：[YZ-60W40P10C](https://detail.tmall.com/item.htm?id=564338158204&spm=a1z09.2.0.0.25fc2e8dP2Q6cc&_u=c1n98e50407a)
     * 工作电压：48V
-    * 最大转速：300rpm
+    * 最大转速：3000 rpm
     * 编码器线数：2500（10000线/圈）
 * 控制器型号：[YZ-ACSD608](https://detail.tmall.com/item.htm?id=564338158204&spm=a1z09.2.0.0.25fc2e8dP2Q6cc&_u=c1n98e50407a)
     * 工作电压：DC24v~48v
 * 行星齿轮型号：[YT-200-18](https://detail.tmall.com/item.htm?id=610150059104&spm=a1z09.2.0.0.25fc2e8dP2Q6cc&_u=c1n98e5071ee)
     * 减速比：1/18
-* 具体参数及技术细节参考手册：
+* 具体参数及技术细节参考[手册](https://github.com/Ssz990220/Servo-Motor-Ctl/blob/master/Manual/YZ-ACSD608%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_v6.8.pdf)
 ## 安装方法：
-* 安装CH341-w7.exe（串口驱动）
-* 安装yz_acsd608_5_2.exe（电机调试）
+* 安装[CH341-w7.exe](https://github.com/Ssz990220/Servo-Motor-Ctl/blob/master/Driver/CH341-W7.exe)（串口驱动）
+* 安装[yz_acsd608_5_2.exe](https://github.com/Ssz990220/Servo-Motor-Ctl/blob/master/Driver/yz_acsd608_5_2.exe)（电机调试）
 * 使用设备管理器查看端口号（windows：win+x→设备管理器→串口（例如COM6））
 * 运行YZ_ACSD608，输入对应端口进行连接
     * 使能modbus，发送1
