@@ -18,7 +18,7 @@
     * 其他参数操作...
     * 参数保存标志，发送1，以保存数据
 ## python环境
-* python 3.8.5
+* python >= 3.5
     * serial
     * pyserial
 * 运行`main.py`前
