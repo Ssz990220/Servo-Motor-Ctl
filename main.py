@@ -79,7 +79,8 @@ def send_cmd(ser, cmd, disp=0):
     if disp:
         print(cmd)
 
-def move(ser,degree):
+def move_abs(ser,degree):
+    # Move to absolute position (0 is the position where you power the motor)
     r = degree/360
     p = int(r*2500*4*18)
     if p>=0:
@@ -99,7 +100,5 @@ if __name__=='__main__':
     # 0001表示该数据位上有一位数据
     # Read income msg to clear cache every time you send a cmd !!!
     ser = init("COM6")
-    move(ser, 150)
-    read_data(ser,16)
-    read_data(ser,17)
+    move_abs(ser, 30)
     send_cmd(ser, "010600000000")    #下使能modbus
